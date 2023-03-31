@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./form2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Form Modal</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Login Modal Example</h1>
+      <button
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Open Modal
+      </button>
+    </div>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-info">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">USER INFO</h1>
+          </div>
+          <div class="modal-body">
+            <form
+              action="bootstrap-assets/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="col mb-3">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Username"
+                    id="Username"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3 mt-1 password">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="Password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div>
+                <p>Choose your gender</p>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="html">Male</label><br />
+                <input type="radio" id="gender" name="gender" value="Female" />
+                <label for="css">Female</label><br />
+                <input type="radio" id="gender" name="gender" value="other" />
+                <label for="other">Other</label><br /><br />
+              </div>
+
+              <label for="location">Choose Your Location:</label>
+              <select id="cars" name="cars">
+                <option value="enugu">Enugu</option>
+                <option value="lagos">Lagos</option>
+                <option value="abuja">Abuja</option>
+                <option value="ebonyi">Ebonyi</option>
+              </select>
+
+              <div>
+                <textarea
+                  class="form control message mt-2 mb-2"
+                  name="message"
+                  rows="5"
+                  placeholder="More About You"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-danger can"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="btn btn-success sub"
+                data-dismiss="modal"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
